@@ -1,0 +1,775 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Login = Instance.new("Frame")
+local LoginFrameColor = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Exitbutton = Instance.new("TextButton")
+local Divinity = Instance.new("TextLabel")
+local UsernameTag = Instance.new("TextLabel")
+local PasswordTag = Instance.new("TextLabel")
+local ConfirmTag = Instance.new("TextLabel")
+local Username = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local Password = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local Confirm = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Welcome = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local PlayerName = Instance.new("TextLabel")
+local UserFrameColor = Instance.new("Frame")
+local Exitbutton1 = Instance.new("TextButton")
+local Bio1 = Instance.new("TextLabel")
+local Bio2 = Instance.new("TextLabel")
+local Bio3 = Instance.new("TextLabel")
+local bio4 = Instance.new("TextLabel")
+local Player = Instance.new("Frame")
+local ColorFrame = Instance.new("Frame")
+local Divinity_2 = Instance.new("TextLabel")
+local Exitbutton3 = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Credits = Instance.new("Frame")
+local CreditsLabel = Instance.new("TextLabel")
+local LoginFrameColor_2 = Instance.new("Frame")
+local Ui = Instance.new("TextLabel")
+local scriptlabel = Instance.new("TextLabel")
+local Exitbutton4 = Instance.new("TextButton")
+local OpenHotbar = Instance.new("TextButton")
+local Hotbar = Instance.new("ImageLabel")
+local IconBACKGROUND = Instance.new("Frame")
+local HomeInfo = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local UIListLayout = Instance.new("UIListLayout")
+local UICorner_6 = Instance.new("UICorner")
+local Login_2 = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local UICorner_7 = Instance.new("UICorner")
+local Player_2 = Instance.new("TextButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local UICorner_8 = Instance.new("UICorner")
+local SkiddedScript = Instance.new("TextButton")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_9 = Instance.new("UICorner")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local Credits_2 = Instance.new("TextButton")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_10 = Instance.new("UICorner")
+local IconBackGroundCorner = Instance.new("ImageLabel")
+local time = Instance.new("TextLabel")
+local HotbarMinimise = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Login.Name = "Login"
+Login.Parent = ScreenGui
+Login.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Login.BorderSizePixel = 0
+Login.Position = UDim2.new(0.34768945, 0, 0.0314933062, 0)
+Login.Size = UDim2.new(0, 428, 0, 206)
+Login.Visible = false
+
+LoginFrameColor.Name = "LoginFrameColor"
+LoginFrameColor.Parent = Login
+LoginFrameColor.BackgroundColor3 = Color3.fromRGB(81, 76, 255)
+LoginFrameColor.BorderSizePixel = 0
+LoginFrameColor.Size = UDim2.new(0, 12, 0, 206)
+
+UICorner.CornerRadius = UDim.new(0.0250000004, 0)
+UICorner.Parent = LoginFrameColor
+
+Exitbutton.Name = "Exitbutton"
+Exitbutton.Parent = Login
+Exitbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton.BackgroundTransparency = 1.000
+Exitbutton.BorderSizePixel = 0
+Exitbutton.Position = UDim2.new(0.875555575, 0, 0.0490196086, 0)
+Exitbutton.Size = UDim2.new(0, 28, 0, 25)
+Exitbutton.Font = Enum.Font.SourceSans
+Exitbutton.Text = "X"
+Exitbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton.TextScaled = true
+Exitbutton.TextSize = 14.000
+Exitbutton.TextWrapped = true
+
+Divinity.Name = "Divinity"
+Divinity.Parent = Login
+Divinity.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Divinity.BackgroundTransparency = 1.000
+Divinity.BorderSizePixel = 0
+Divinity.Position = UDim2.new(0.0280373804, 0, 0.0410236232, 0)
+Divinity.Size = UDim2.new(0, 159, 0, 50)
+Divinity.Font = Enum.Font.SourceSansBold
+Divinity.Text = "Divinity"
+Divinity.TextColor3 = Color3.fromRGB(255, 255, 255)
+Divinity.TextScaled = true
+Divinity.TextSize = 14.000
+Divinity.TextWrapped = true
+
+UsernameTag.Name = "UsernameTag"
+UsernameTag.Parent = Login
+UsernameTag.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+UsernameTag.BackgroundTransparency = 1.000
+UsernameTag.BorderSizePixel = 0
+UsernameTag.Position = UDim2.new(0.0280373823, 0, 0.305825233, 0)
+UsernameTag.Size = UDim2.new(0, 172, 0, 50)
+UsernameTag.Font = Enum.Font.SourceSansLight
+UsernameTag.Text = "Username:"
+UsernameTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+UsernameTag.TextSize = 42.000
+UsernameTag.TextWrapped = true
+
+PasswordTag.Name = "PasswordTag"
+PasswordTag.Parent = Login
+PasswordTag.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+PasswordTag.BackgroundTransparency = 1.000
+PasswordTag.BorderSizePixel = 0
+PasswordTag.Position = UDim2.new(0, 0, 0.514563084, 0)
+PasswordTag.Size = UDim2.new(0, 188, 0, 50)
+PasswordTag.Font = Enum.Font.SourceSansLight
+PasswordTag.Text = "Password:"
+PasswordTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+PasswordTag.TextSize = 42.000
+PasswordTag.TextWrapped = true
+
+ConfirmTag.Name = "ConfirmTag"
+ConfirmTag.Parent = Login
+ConfirmTag.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ConfirmTag.BackgroundTransparency = 1.000
+ConfirmTag.BorderSizePixel = 0
+ConfirmTag.Position = UDim2.new(-0.0186915882, 0, 0.728155315, 0)
+ConfirmTag.Size = UDim2.new(0, 179, 0, 50)
+ConfirmTag.Font = Enum.Font.SourceSansLight
+ConfirmTag.Text = "Confirm:"
+ConfirmTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+ConfirmTag.TextSize = 42.000
+ConfirmTag.TextWrapped = true
+
+Username.Name = "Username"
+Username.Parent = Login
+Username.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(0.467289716, 0, 0.325242728, 0)
+Username.Size = UDim2.new(0, 223, 0, 42)
+Username.Font = Enum.Font.SourceSans
+Username.Text = ""
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.5, 0)
+UICorner_2.Parent = Username
+
+Password.Name = "Password"
+Password.Parent = Login
+Password.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Password.BorderSizePixel = 0
+Password.Position = UDim2.new(0.467289716, 0, 0.553398013, 0)
+Password.Size = UDim2.new(0, 223, 0, 42)
+Password.Font = Enum.Font.SourceSans
+Password.Text = ""
+Password.TextColor3 = Color3.fromRGB(255, 255, 255)
+Password.TextScaled = true
+Password.TextSize = 14.000
+Password.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.5, 0)
+UICorner_3.Parent = Password
+
+Confirm.Name = "Confirm"
+Confirm.Parent = Login
+Confirm.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Confirm.BorderSizePixel = 0
+Confirm.Position = UDim2.new(0, 200, 0, 163)
+Confirm.Size = UDim2.new(0, 223, 0, 37)
+Confirm.Font = Enum.Font.SourceSans
+Confirm.Text = "✔️"
+Confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Confirm.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0.5, 0)
+UICorner_4.Parent = Confirm
+
+Welcome.Name = "Welcome"
+Welcome.Parent = ScreenGui
+Welcome.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.379491687, 0, 0.319812804, 0)
+Welcome.Size = UDim2.new(0, 411, 0, 192)
+Welcome.Visible = false
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Welcome
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.Position = UDim2.new(0.780438185, 0, 0.0415313952, 0)
+PlayerImage.Size = UDim2.new(0, 57, 0, 57)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_5.CornerRadius = UDim.new(0.5, 0)
+UICorner_5.Parent = PlayerImage
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Welcome
+PlayerName.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.BorderSizePixel = 0
+PlayerName.Position = UDim2.new(0.0411238074, 0, 0.0829951242, 0)
+PlayerName.Size = UDim2.new(0, 294, 0, 50)
+PlayerName.Font = Enum.Font.SourceSansBold
+PlayerName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+UserFrameColor.Name = "UserFrameColor"
+UserFrameColor.Parent = Welcome
+UserFrameColor.BackgroundColor3 = Color3.fromRGB(255, 247, 254)
+UserFrameColor.BorderSizePixel = 0
+UserFrameColor.Position = UDim2.new(-0.0116387811, 0, 0, 0)
+UserFrameColor.Size = UDim2.new(0, 11, 0, 192)
+
+Exitbutton1.Name = "Exitbutton1"
+Exitbutton1.Parent = Welcome
+Exitbutton1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton1.BackgroundTransparency = 1.000
+Exitbutton1.BorderSizePixel = 0
+Exitbutton1.Position = UDim2.new(0.921287298, 0, -0.00292844325, 0)
+Exitbutton1.Size = UDim2.new(0, 28, 0, 25)
+Exitbutton1.Font = Enum.Font.SourceSans
+Exitbutton1.Text = "X"
+Exitbutton1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton1.TextScaled = true
+Exitbutton1.TextSize = 14.000
+Exitbutton1.TextWrapped = true
+
+Bio1.Name = "Bio1"
+Bio1.Parent = Welcome
+Bio1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bio1.BackgroundTransparency = 1.000
+Bio1.Position = UDim2.new(0.0348877907, 0, 0.420136184, 0)
+Bio1.Size = UDim2.new(0, 386, 0, 29)
+Bio1.Font = Enum.Font.SourceSans
+Bio1.Text = "Divinity, A script hub that first released in 08/08/2022 by the owner: Deity#6572"
+Bio1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bio1.TextScaled = true
+Bio1.TextSize = 14.000
+Bio1.TextWrapped = true
+
+Bio2.Name = "Bio2"
+Bio2.Parent = Welcome
+Bio2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bio2.BackgroundTransparency = 1.000
+Bio2.Position = UDim2.new(-0.0170316324, 0, 0.541666627, 0)
+Bio2.Size = UDim2.new(0, 385, 0, 23)
+Bio2.Font = Enum.Font.SourceSans
+Bio2.Text = "After creation of the Script Hub, A premium version was in the making"
+Bio2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bio2.TextSize = 14.000
+
+Bio3.Name = "Bio3"
+Bio3.Parent = Welcome
+Bio3.BackgroundColor3 = Color3.fromRGB(252, 255, 255)
+Bio3.BackgroundTransparency = 1.000
+Bio3.BorderSizePixel = 0
+Bio3.Position = UDim2.new(-0.119221404, 0, 0.661458313, 0)
+Bio3.Size = UDim2.new(0, 372, 0, 16)
+Bio3.Font = Enum.Font.SourceSans
+Bio3.Text = "The Premium Version was then released on X date"
+Bio3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bio3.TextSize = 14.000
+
+bio4.Name = "bio4"
+bio4.Parent = Welcome
+bio4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bio4.BackgroundTransparency = 1.000
+bio4.Position = UDim2.new(0.0349738859, 0, 0.75999999, 0)
+bio4.Size = UDim2.new(0, 173, 0, 19)
+bio4.Font = Enum.Font.SourceSans
+bio4.Text = "Now, the present has been reached"
+bio4.TextColor3 = Color3.fromRGB(255, 255, 255)
+bio4.TextSize = 14.000
+
+Player.Name = "Player"
+Player.Parent = ScreenGui
+Player.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Player.Position = UDim2.new(0.404166996, 0, 0.300614595, 0)
+Player.Size = UDim2.new(0, 464, 0, 233)
+Player.Visible = false
+
+ColorFrame.Name = "ColorFrame"
+ColorFrame.Parent = Player
+ColorFrame.BackgroundColor3 = Color3.fromRGB(9, 0, 153)
+ColorFrame.BorderSizePixel = 0
+ColorFrame.Position = UDim2.new(0, 0, 0.0111731011, -2)
+ColorFrame.Size = UDim2.new(0, 15, 0, 232)
+
+Divinity_2.Name = "Divinity"
+Divinity_2.Parent = Player
+Divinity_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Divinity_2.BackgroundTransparency = 1.000
+Divinity_2.BorderSizePixel = 0
+Divinity_2.Position = UDim2.new(0.00472131744, 0, 0.0577834025, 0)
+Divinity_2.Size = UDim2.new(0, 159, 0, 50)
+Divinity_2.Font = Enum.Font.SourceSansBold
+Divinity_2.Text = "Player"
+Divinity_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Divinity_2.TextScaled = true
+Divinity_2.TextSize = 14.000
+Divinity_2.TextWrapped = true
+
+Exitbutton3.Name = "Exitbutton3"
+Exitbutton3.Parent = Player
+Exitbutton3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton3.BackgroundTransparency = 1.000
+Exitbutton3.BorderSizePixel = 0
+Exitbutton3.Position = UDim2.new(0.910038352, 0, 0.0576032996, 0)
+Exitbutton3.Size = UDim2.new(0, 28, 0, 25)
+Exitbutton3.Font = Enum.Font.SourceSans
+Exitbutton3.Text = "X"
+Exitbutton3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton3.TextScaled = true
+Exitbutton3.TextSize = 14.000
+Exitbutton3.TextWrapped = true
+
+TextBox.Parent = Player
+TextBox.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.049568966, 0, 0.300429195, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Work In Progress"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = ScreenGui
+Credits.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.366345286, 0, 0.319001406, 0)
+Credits.Size = UDim2.new(0, 378, 0, 193)
+Credits.Visible = false
+
+CreditsLabel.Name = "CreditsLabel"
+CreditsLabel.Parent = Credits
+CreditsLabel.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+CreditsLabel.BackgroundTransparency = 1.000
+CreditsLabel.BorderSizePixel = 0
+CreditsLabel.Position = UDim2.new(-0.103174597, 0, 0.0569948182, 0)
+CreditsLabel.Size = UDim2.new(0, 219, 0, 60)
+CreditsLabel.Font = Enum.Font.PatrickHand
+CreditsLabel.Text = "Credits"
+CreditsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsLabel.TextScaled = true
+CreditsLabel.TextSize = 14.000
+CreditsLabel.TextWrapped = true
+
+LoginFrameColor_2.Name = "LoginFrameColor"
+LoginFrameColor_2.Parent = Credits
+LoginFrameColor_2.BackgroundColor3 = Color3.fromRGB(183, 0, 3)
+LoginFrameColor_2.BorderSizePixel = 0
+LoginFrameColor_2.Position = UDim2.new(-0.0291005298, 0, 0, 0)
+LoginFrameColor_2.Size = UDim2.new(0, 11, 0, 193)
+
+Ui.Name = "Ui"
+Ui.Parent = Credits
+Ui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ui.BackgroundTransparency = 1.000
+Ui.BorderSizePixel = 0
+Ui.Position = UDim2.new(-0.126984134, 0, 0.430051804, 0)
+Ui.Size = UDim2.new(0, 314, 0, 50)
+Ui.Font = Enum.Font.SourceSans
+Ui.Text = "Ui: Deity#7734"
+Ui.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ui.TextSize = 40.000
+Ui.TextWrapped = true
+
+scriptlabel.Name = "scriptlabel"
+scriptlabel.Parent = Credits
+scriptlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scriptlabel.BackgroundTransparency = 1.000
+scriptlabel.BorderSizePixel = 0
+scriptlabel.Position = UDim2.new(0, 0, 0.68911916, 0)
+scriptlabel.Size = UDim2.new(0, 314, 0, 50)
+scriptlabel.Font = Enum.Font.SourceSans
+scriptlabel.Text = "Scripts: Unossociated Members"
+scriptlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+scriptlabel.TextSize = 40.000
+scriptlabel.TextWrapped = true
+
+Exitbutton4.Name = "Exitbutton4"
+Exitbutton4.Parent = Credits
+Exitbutton4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton4.BackgroundTransparency = 1.000
+Exitbutton4.BorderSizePixel = 0
+Exitbutton4.Position = UDim2.new(0.875555575, 0, 0.0490196086, 0)
+Exitbutton4.Size = UDim2.new(0, 28, 0, 25)
+Exitbutton4.Font = Enum.Font.SourceSans
+Exitbutton4.Text = "X"
+Exitbutton4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exitbutton4.TextScaled = true
+Exitbutton4.TextSize = 14.000
+Exitbutton4.TextWrapped = true
+
+OpenHotbar.Name = "OpenHotbar"
+OpenHotbar.Parent = ScreenGui
+OpenHotbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenHotbar.BackgroundTransparency = 1.000
+OpenHotbar.BorderSizePixel = 0
+OpenHotbar.Position = UDim2.new(0.552673042, 0, 0.806657434, 0)
+OpenHotbar.Size = UDim2.new(0, 38, 0, 38)
+OpenHotbar.Visible = false
+OpenHotbar.Font = Enum.Font.SourceSans
+OpenHotbar.Text = "↑"
+OpenHotbar.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenHotbar.TextScaled = true
+OpenHotbar.TextSize = 14.000
+OpenHotbar.TextWrapped = true
+
+Hotbar.Name = "Hotbar"
+Hotbar.Parent = ScreenGui
+Hotbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hotbar.BackgroundTransparency = 1.000
+Hotbar.Position = UDim2.new(0.379491687, 0, 0.872081399, 0)
+Hotbar.Size = UDim2.new(0, 390, 0, 59)
+Hotbar.ZIndex = 2
+Hotbar.Image = "rbxassetid://3570695787"
+Hotbar.ImageColor3 = Color3.fromRGB(24, 24, 24)
+Hotbar.ScaleType = Enum.ScaleType.Slice
+Hotbar.SliceCenter = Rect.new(100, 100, 100, 100)
+Hotbar.SliceScale = 0.120
+
+IconBACKGROUND.Name = "IconBACKGROUND"
+IconBACKGROUND.Parent = Hotbar
+IconBACKGROUND.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+IconBACKGROUND.BorderSizePixel = 0
+IconBACKGROUND.Position = UDim2.new(0.430438876, 0, 0, 0)
+IconBACKGROUND.Size = UDim2.new(0, 223, 0, 59)
+IconBACKGROUND.ZIndex = 3
+
+HomeInfo.Name = "HomeInfo"
+HomeInfo.Parent = IconBACKGROUND
+HomeInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeInfo.Position = UDim2.new(0.312050313, 0, 0.251282632, 0)
+HomeInfo.Size = UDim2.new(0, 32, 0, 32)
+HomeInfo.ZIndex = 3
+HomeInfo.Font = Enum.Font.SourceSans
+HomeInfo.Text = ""
+HomeInfo.TextColor3 = Color3.fromRGB(0, 0, 0)
+HomeInfo.TextSize = 14.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(48, 48, 48)), ColorSequenceKeypoint.new(0.91, Color3.fromRGB(79, 79, 79)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(77, 78, 78))}
+UIGradient.Rotation = 54
+UIGradient.Parent = HomeInfo
+
+UIListLayout.Parent = HomeInfo
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+UICorner_6.Parent = HomeInfo
+
+Login_2.Name = "Login"
+Login_2.Parent = IconBACKGROUND
+Login_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Login_2.BorderColor3 = Color3.fromRGB(17, 10, 50)
+Login_2.Position = UDim2.new(0.263926923, 0, 0.273809582, 0)
+Login_2.Size = UDim2.new(0, 32, 0, 32)
+Login_2.ZIndex = 3
+Login_2.Font = Enum.Font.SourceSans
+Login_2.Text = ""
+Login_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login_2.TextSize = 14.000
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(53, 8, 90)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(18, 11, 48))}
+UIGradient_2.Rotation = 220
+UIGradient_2.Parent = Login_2
+
+UIListLayout_2.Parent = Login_2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+UICorner_7.Parent = Login_2
+
+Player_2.Name = "Player"
+Player_2.Parent = IconBACKGROUND
+Player_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.BorderColor3 = Color3.fromRGB(17, 10, 50)
+Player_2.Position = UDim2.new(0.502100766, 0, 0.273809612, 0)
+Player_2.Size = UDim2.new(0, 32, 0, 32)
+Player_2.Visible = false
+Player_2.ZIndex = 3
+Player_2.Font = Enum.Font.SourceSans
+Player_2.Text = ""
+Player_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player_2.TextSize = 14.000
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(19, 3, 163)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 7, 55))}
+UIGradient_3.Rotation = 170
+UIGradient_3.Parent = Player_2
+
+UIListLayout_3.Parent = Player_2
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+UICorner_8.Parent = Player_2
+
+SkiddedScript.Name = "SkiddedScript"
+SkiddedScript.Parent = IconBACKGROUND
+SkiddedScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SkiddedScript.BorderColor3 = Color3.fromRGB(10, 54, 0)
+SkiddedScript.Position = UDim2.new(1.19209087, 0, 0.261904716, 0)
+SkiddedScript.Size = UDim2.new(0, 32, 0, 32)
+SkiddedScript.Visible = false
+SkiddedScript.ZIndex = 3
+SkiddedScript.Font = Enum.Font.SourceSans
+SkiddedScript.Text = ""
+SkiddedScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkiddedScript.TextSize = 14.000
+
+UIListLayout_4.Parent = SkiddedScript
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(9, 45, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(16, 92, 0))}
+UIGradient_4.Rotation = 135
+UIGradient_4.Parent = SkiddedScript
+
+UICorner_9.Parent = SkiddedScript
+
+UIListLayout_5.Parent = IconBACKGROUND
+UIListLayout_5.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_5.Padding = UDim.new(0, 10)
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = IconBACKGROUND
+Credits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.BorderColor3 = Color3.fromRGB(39, 16, 12)
+Credits_2.Position = UDim2.new(0.0358744413, 0, 0.117647059, 0)
+Credits_2.Size = UDim2.new(0, 32, 0, 32)
+Credits_2.Visible = false
+Credits_2.ZIndex = 3
+Credits_2.Font = Enum.Font.SourceSans
+Credits_2.Text = ""
+Credits_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits_2.TextSize = 14.000
+
+UIListLayout_6.Parent = Credits_2
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(64, 12, 17)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(118, 11, 23))}
+UIGradient_5.Rotation = 76
+UIGradient_5.Parent = Credits_2
+
+UICorner_10.Parent = Credits_2
+
+IconBackGroundCorner.Name = "IconBackGroundCorner"
+IconBackGroundCorner.Parent = Hotbar
+IconBackGroundCorner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IconBackGroundCorner.BackgroundTransparency = 1.000
+IconBackGroundCorner.BorderSizePixel = 0
+IconBackGroundCorner.Position = UDim2.new(0.302125275, 4, -0.00799974333, 0)
+IconBackGroundCorner.Size = UDim2.new(0, 46, 0, 59)
+IconBackGroundCorner.ZIndex = 3
+IconBackGroundCorner.Image = "http://www.roblox.com/asset/?id=10799594332"
+
+time.Name = "time"
+time.Parent = Hotbar
+time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+time.BackgroundTransparency = 1.000
+time.Position = UDim2.new(0.0699672848, 0, 0.217384323, 0)
+time.Size = UDim2.new(0, 89, 0, 33)
+time.ZIndex = 3
+time.Font = Enum.Font.SourceSans
+time.TextColor3 = Color3.fromRGB(255, 255, 255)
+time.TextScaled = true
+time.TextSize = 14.000
+time.TextWrapped = true
+
+HotbarMinimise.Name = "HotbarMinimise"
+HotbarMinimise.Parent = Hotbar
+HotbarMinimise.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HotbarMinimise.BackgroundTransparency = 1.000
+HotbarMinimise.BorderSizePixel = 0
+HotbarMinimise.Position = UDim2.new(0.50448674, 0, -0.784526229, 0)
+HotbarMinimise.Size = UDim2.new(0, 38, 0, 38)
+HotbarMinimise.Font = Enum.Font.SourceSans
+HotbarMinimise.Text = "↓"
+HotbarMinimise.TextColor3 = Color3.fromRGB(0, 0, 0)
+HotbarMinimise.TextScaled = true
+HotbarMinimise.TextSize = 13.000
+HotbarMinimise.TextWrapped = true
+
+-- Scripts:
+
+local function FEHRVTD_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	--hotbar functions
+	local hotbar = script.Parent.Hotbar
+	--login functions
+	local login = script.Parent.Login
+	local Scriptlogin = script.Parent.Hotbar.IconBACKGROUND.Login
+	local exitbutton = login.Exitbutton
+	local username = script.Parent.Login.Username
+	local password = script.Parent.Login.Password
+	local confirm = script.Parent.Login.Confirm
+	--welcome gui functions
+	local welcome = script.Parent.Welcome
+	local homeinfo = script.Parent.Hotbar.IconBACKGROUND.HomeInfo
+	local exitbutton1 = welcome.Exitbutton1 
+	--credit functions
+	local Credits = script.Parent.Hotbar.IconBACKGROUND.Credits
+	local creditgui =script.Parent.Credits
+	local exitbutton4 = creditgui.Exitbutton4
+	--player functions
+	local player = script.Parent.Hotbar.IconBACKGROUND.Player
+	local playergui = script.Parent.Player
+	local exitbutton3 = playergui.Exitbutton3
+	
+	--skidded script functions
+	local skid = script.Parent.Hotbar.IconBACKGROUND.SkiddedScript
+	--Hotbar Minimise and open
+	local minimise = script.Parent.Hotbar.HotbarMinimise
+	local openhotbar = script.Parent.OpenHotbar
+	-- login script
+	Scriptlogin.MouseButton1Click:Connect(function()
+		login.Visible = true	
+	end)
+	
+	exitbutton.MouseButton1Click:Connect(function()
+		login.Visible = false
+	end)
+	
+	login.Active = true
+	login.Draggable = true
+	
+	--welcome gui
+	
+	homeinfo.MouseButton1Click:Connect(function()
+		welcome.Visible = true
+	end)
+	
+	exitbutton1.MouseButton1Click:Connect(function()
+		welcome.Visible = false
+	end)
+	
+	welcome.Active = true
+	welcome.Draggable = true
+	
+	--script
+	confirm.MouseButton1Down:Connect(function()
+		if username.Text == "2" then
+			if password.Text == "1" then
+				Credits.Visible = true
+				player.Visible = true
+				skid.Visible = true
+				login.Visible = false
+				Scriptlogin.Visible = false
+				homeinfo.Position = UDim2.new(0.264, 0,0.274, 0)
+		   end	
+		end
+	end)
+	
+	skid.MouseButton1Click:Connect(function()
+		local window = loadstring(game:HttpGet('https://raw.githubusercontent.com/D7ity/Keylesss/main/Hub'))()
+	end)
+	--player
+	
+	player.MouseButton1Click:Connect(function()
+		playergui.Visible = true
+		playergui.Active = true
+		playergui.Draggable = true
+	end)
+	
+	exitbutton3.MouseButton1Click:Connect(function()
+		playergui.Visible = false
+	end)
+	
+	--credits
+	Credits.MouseButton1Click:Connect(function()
+		creditgui.Visible = true
+		creditgui.Active = true
+		creditgui.Draggable = true
+	end)
+	
+	
+	exitbutton4.MouseButton1Click:Connect(function()
+		creditgui.Visible = false
+	end)
+	
+	--minimise script
+	minimise.MouseButton1Click:Connect(function()
+		hotbar.Visible = false
+		openhotbar.Visible = true
+		openhotbar.Active = true
+		openhotbar.Draggable = true
+		
+	end)
+	
+	openhotbar.MouseButton1Click:Connect(function()
+		hotbar.Visible = true
+		openhotbar.Visible = false
+		minimise.Active = true
+		minimise.Draggable = true	
+		hotbar.Active = true
+		hotbar.Draggable = true
+	end)
+end
+coroutine.wrap(FEHRVTD_fake_script)()
+local function LJTKEKI_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	local welcome = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	welcome.PlayerImage.Image = content
+	
+	welcome.PlayerName.Text = player.DisplayName .. ", Welcome To Divinity"
+	
+end
+coroutine.wrap(LJTKEKI_fake_script)()
+local function BOXQVMW_fake_script() -- time.LocalScript 
+	local script = Instance.new('LocalScript', time)
+
+	while true do
+		local TimeInUnix = os.time()
+		local Date = script.Parent
+		
+		local StringToFormat = "%I:%M %p"
+		
+		local result = os.date(StringToFormat, TimeInUnix)
+		
+		Date.Text = result
+		wait(1)
+	end
+end
+coroutine.wrap(BOXQVMW_fake_script)()
